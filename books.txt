@@ -1,0 +1,22 @@
+BOOKS
+
+id - INT - UNSIGNED - PRIMARY KEY - NOTNULL - AUTOINCREMENT -UNIQUE
+isbn - VARCHAR(13) - NOTNULL - UNIQUE
+title - VARCHAR(255) - NOTNULL
+description - TEXT - NULL
+author - VARCHAR(255) - NOTNULL
+year - YEAR - NOTNULL
+price - UNSIGNED - DECIMAL(6,2) - NULL
+pages_number - SMALLINT - UNSIGNED - NULL
+publisher - VARCHAR(120) - NOTNULL
+genre - VARCHAR(20) - NOTNULL
+poster - TEXT - NOTNULL - DEFAULT("/img/default.jpg");
+weight_g - SMALLINT - UNSIGNED - NULL
+width_mm - SMALLINT - UNSIGNED - NULL
+height_mm - SMALLINT - UNSIGNED - NULL
+thickness_mm - SMALLINT - UNSIGNED - NULL
+rating - FLOAT(3,1) - UNSIGNED - NULL
+bestseller - TINYINT - NOTNULL - DEFAULT(false)
+cover_type - VARCHAR(20) - NULL
+e_book - TINYINT - NULL
+language - VARCHAR(2) - NOTNULL
